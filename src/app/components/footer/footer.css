@@ -1,0 +1,337 @@
+.trending-sec {
+    margin: 0 auto;
+    max-width: 990px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #527da1;
+    margin-bottom: 12px
+}
+
+.trending-head {
+    border-bottom: 1px solid #527da1;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    padding: 0px 0 14px;
+    text-transform: uppercase
+}
+
+.trending-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+}
+
+.trending-col {
+    width: 100%;
+    float: left
+}
+
+.trending-list
+li {
+    float: left;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0 0 20px;
+    padding: 0 0 0 15px;
+    position: relative;
+    width: 25%;
+    box-sizing: border-box !important
+}
+
+.trending-list
+li::before {
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 8px
+}
+
+.trending-list
+li a {
+    color: #ccc;
+    text-transform: capitalize
+}
+
+.trending-list li a:hover {
+    color: #fff
+}
+
+@media (max-width: 767px) {
+    .trending-col {
+        width: 100%
+    }
+
+    .trending-list li {
+        width: 100%
+    }
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.footerbg {
+    background: #003f74;
+    padding-top: 30px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.footer-logo img {
+    display: inline-block;
+    width: 250px
+}
+
+.footer-section {
+    float: left;
+    width: 25%;
+}
+
+.footer-section-link {
+    float: left;
+    width: 75%;
+}
+
+.social-connect {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sctitle {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.sc-link > li {
+    float: left;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.sc-link > li > a {
+    display: block;
+    font-size: 27px;
+}
+
+.footer-section-link section {
+    float: left;
+    width: 20%;
+}
+
+.footer-seclnk {
+    margin-right: 20px;
+}
+
+.footer-seclnk > li {
+    list-style-type: none;
+}
+
+.footer-seclnk > li > a {
+    color: #ccc;
+    display: block;
+    font-size: 11px;
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+.footer-seclnk > li > strong {
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+.footer-seclnk > li:hover a {
+    color: #fff;
+}
+
+.footlink {
+    border-top: 1px solid #527da1;
+    display: table;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footlink li {
+    float: left;
+    list-style-type: none;
+}
+
+.footlink li a {
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    padding: 7px;
+    text-transform: uppercase;
+}
+
+.footlink li:first-child a {
+    padding-left: 0;
+}
+
+.copyrightbox {
+    padding: 20px 0;
+}
+
+.copylink {
+    float: left;
+    width: 50%;
+}
+
+.copylink a {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.copylink a + a:before {
+    content: "|";
+    padding: 0 5px;
+    color: #555;
+}
+
+.copyright {
+    color: #555;
+    float: right;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+    width: 50%;
+}
+
+button.searchcarbx {
+    background: #114c7d;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+}
+
+.switch-lang-fot {
+    float: right;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+    float: left;
+}
+
+.switch-lang-fot a {
+    border: 1px solid #d9d9d9;
+    color: #fff;
+    display: block;
+    margin: 0px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sc-link > li > a i.fa-facebook {
+    background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -2px -48px;
+    height: 46px;
+    width: 46px;
+    display: block;
+}
+
+.sc-link > li > a i.fa-twitter {
+    background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -2px -104px;
+    height: 46px;
+    width: 46px;
+    display: block;
+}
+
+.sc-link > li > a i.fa-linkedin {
+    background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -2px -160px;
+    height: 46px;
+    width: 46px;
+    display: block;
+}
+
+.sc-link > li > a i.fa-apple {
+    background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -2px -216px;
+    height: 46px;
+    width: 46px;
+    display: block;
+}
+
+.sc-link > li > a i.fa-android {
+    background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -2px -272px;
+    height: 46px;
+    width: 46px;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .switch-lang-fot {
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .footer-section, .footer-section-link {
+        width: 100%;
+    }
+
+    .footer-section, .footer-section-link {
+        width: 100%;
+    }
+
+    .footer-section-link section {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .copylink, .copyright {
+        text-align: left;
+        width: 100%;
+    }
+
+    .copylink {
+        margin-bottom: 10px;
+    }
+
+    .copylink a {
+        padding-right: 10px;
+    }
+
+    .copylink a + a::before {
+        display: none;
+    }
+
+    .footlink li:first-child a {
+        padding-left: 7px;
+    }
+
+    .copylink a {
+        padding-right: 10px;
+    }
+
+    .copylink a, .copyright {
+        line-height: 16px;
+    }
+}

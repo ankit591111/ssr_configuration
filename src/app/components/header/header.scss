@@ -1,0 +1,1141 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+
+body {
+  line-height: 1
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+nav ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold
+}
+
+del {
+  text-decoration: line-through
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0
+}
+
+input, select {
+  vertical-align: middle
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+a:hover {
+  color: #003f74;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb60 {
+  margin-bottom: 40px;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.fewrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.add-left, .add-right {
+  display: block;
+  position: fixed;
+  top: 116px;
+  z-index: 1111;
+  transition: top 300ms ease-out 10ms;
+}
+
+.add-left {
+  right: 50%;
+  margin-right: 550px;
+}
+
+.add-right {
+  left: 50%;
+  margin-left: 550px;
+}
+
+.mainnav {
+  background: #003f74;
+  height: 72px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+
+.tpadding {
+  padding-top: 72px;
+}
+
+.feleftbox {
+  float: left;
+}
+
+.felogo {
+  padding: 26px;
+  margin-left: 30px;
+  width: 300px;
+}
+
+nav {
+  position: relative;
+  float: left;
+}
+
+#navbar {
+  position: relative;
+}
+
+#navbar > li {
+  float: left;
+  padding: 27px 8px 24px;
+}
+
+#navbar > li > a {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  padding-bottom: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#navbar > li > a:hover {
+  border-bottom: 3px solid #fff;
+}
+.adsbox990x90 {
+  margin: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #003f74;
+  padding-bottom: 20px;
+}
+.fesearchbox {
+  margin-top: 25px;
+}
+
+
+.closebtn {
+  background: #444;
+  border-radius: 5px;
+  color: #fff;
+  position: absolute;
+  top: -3px;
+  right: -17px;
+  padding: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -26px -7px;
+  height: 15px;
+  width: 17px;
+}
+
+.searchbx {
+  color: #fff;
+  font-size: 20px;
+}
+
+.searchbx i {
+  color: #fff;
+  background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -1px -7px;
+  height: 18px;
+  width: 18px;
+  display: block;
+}
+
+.searchform {
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.searchform input[type="text"] {
+  background: transparent;
+  padding: 20px 110px 10px 0;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 15px;
+  width: 100%;
+}
+
+.searchform #searchsubmit {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 20px 0 10px 40px;
+}
+
+.searchform .fa-search {
+  position: absolute;
+  right: 70px;
+  color: #fff;
+  top: 35px;
+  font-size: 18px;
+  background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-search.png) no-repeat -1px -7px;
+  height: 18px;
+  width: 18px;
+}
+
+.navicon-menu {
+  position: absolute;
+  left: 20px;
+  top: 21px;
+  background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/sprite-icon.png) no-repeat 0 3px;
+  height: 30px;
+  width: 30px;
+}
+
+.overlay-shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, .8);
+}
+
+body.show .overlay-shadow {
+  display: block;
+  transition-delay: 5s;
+}
+
+body.divices.show {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+
+.fixedpage {
+  position: fixed;
+}
+
+
+.mktwidgetbx {
+  margin-top: -8px;
+}
+
+.green {
+  color: #25974a;
+}
+
+.red {
+  color: #ff3a3a;
+}
+
+.blue {
+  color: #2e6e9e;
+}
+
+.dark-gray {
+  color: #626262;
+}
+
+.light-gray {
+  color: #9d9d9d;
+}
+
+.gainerbox {
+  float: left;
+  margin-left: 30px;
+}
+
+.mseatbx {
+  background: #ebebeb;
+  border: 1px solid #d9d9d9;
+  float: left;
+  padding: 0 5px;
+  width: 270px;
+}
+
+.scrolling-nav {
+  background: #eee;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  width: 100%;
+  display: none;
+}
+.scrolling-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  max-width: 767px;
+  overflow: auto;
+  white-space: nowrap;
+  padding-left: 12px;
+  margin: 0 auto;
+}
+.scrolling-nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.scrolling-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.scrolling-nav ul li:first-child a {
+  text-indent: -9999px;
+  background: url(https://www.financialexpress.com/wp-content/themes/vip/financialexpress/assets/images/home_new.png) no-repeat center center;
+  padding: 0 12px;
+}
+
+
+@media (max-width: 767px) {
+  .mainnav {
+    position: fixed !important;
+  }
+  .scrolling-nav {
+    display: block;
+  }
+  .feleftbox {
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust:none
+  }
+
+  .market-seat,.mktwidgetbx,nav {
+    display: none
+  }
+
+  .mobnone {
+    display: none
+  }
+
+  .mainnav {
+    height: 50px;
+    padding: 0 10px
+  }
+
+  .tpadding {
+    padding-top: 50px
+  }
+
+  .navicon-menu {
+    left: 10px;
+    top: 10px
+  }
+
+  .feleftbox {
+    float: none
+  }
+
+  .felogo {
+    padding: 17px 0;
+    margin: 0 auto;
+    width: 190px
+  }
+
+  .langbox {
+    margin-right: 10px;
+    margin-top: 13px;
+    display: none
+  }
+
+  .fesearchbox {
+    margin-top: 15px
+  }
+
+  .topsocial {
+    position: absolute;
+    top: 0;
+    right: 10px
+  }
+
+
+
+  .closebtn {
+    top: -50px;
+    right: -14px;
+    padding: 9px;
+    font-size: 20px
+  }
+
+
+
+  .fewrapper {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+
+  .heading {
+    font-size: 20px
+  }
+
+  .topblockmain {
+    float: left;
+    margin-bottom: 30px
+  }
+
+  .topblock-midd {
+    padding-right: 0;
+    width: 100%
+  }
+
+  .topnbox h1 {
+    font-size: 22px;
+    line-height: 28px
+  }
+
+
+  .feln-summ {
+    padding-right: 20px;
+    width: 65%
+  }
+
+  .lnewstitle {
+    font-size: 14px
+  }
+
+  .leadimgbox figure {
+    width: 35%
+  }
+
+  .lead2nd-news li {
+    width: 50%
+  }
+
+  .topblock-right {
+    border-left: 0;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 100%
+  }
+
+  .newst-summ {
+    padding: 0 20px 0 0;
+    width: 65%
+  }
+
+  .rhsnews figure {
+    width: 35%
+  }
+
+  .topblock-left {
+    border-right: 0;
+    width: 100%
+  }
+
+  .tnlist {
+    padding: 15px 0
+  }
+
+  .rhsnews .adbox-border-desk {
+    margin: 0 auto
+  }
+
+  .fem-widget,.femnewshold {
+    width: 100%
+  }
+
+  .fenlistbx li {
+    border-left: 0;
+    border-top: 1px solid #d9d9d9;
+    padding: 20px 0;
+    width: 100%
+  }
+
+  .fenlistbx li h3 {
+    min-height: inherit
+  }
+
+  .lftcolbx .fenlistbx li {
+    padding: 20px
+  }
+
+  .fenlistbx li:first-child {
+    border-top: 0
+  }
+
+  .fenlistbx li .bdrbtm {
+    border-bottom: 0;
+    padding-bottom: 0
+  }
+
+  .fenlistbx li p {
+    min-height: inherit;
+    margin-bottom: 0
+  }
+
+  .fecmn-tabs {
+    padding: 20px 0
+  }
+
+  .hlinks {
+    display: none
+  }
+
+  .trend-slide {
+    width: 100%
+  }
+
+  .trend-slide figure img {
+    width: 100%
+  }
+
+  .fecomn-slider .slick-dots li button:before,.trending-slides .slick-dots li button:before {
+    font-size: 12px
+  }
+
+  .fecomn-slider .slick-dots li.slick-active button:before,.trending-slides .slick-dots li.slick-active button:before {
+    color: #003f74
+  }
+
+  .twocol {
+    border-top: 1px solid #d9d9d9;
+    width: 100%
+  }
+
+  .lftsection,.rhtsection {
+    width: 100%
+  }
+
+  .lnkbxttl {
+    width: 65%
+  }
+
+  .lnksumbox figure {
+    width: 35%
+  }
+
+  .lnksumbox {
+    margin-top: 0;
+    padding: 20px 0;
+    width: 100%
+  }
+
+  .lnksumbox:first-child {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 20px
+  }
+
+  .lftcolbx,.rhtcolbx {
+    margin-left: 0;
+    width: 100%
+  }
+
+  .drive-tabs {
+    padding: 20px 0 0;
+    width: 100%
+  }
+
+  .drive-slidebx {
+    border-left: 0;
+    border-top: 1px solid #d9d9d9;
+    padding: 20px 0 20px;
+    margin-top: 20px;
+    width: 100%
+  }
+
+  .feseclist {
+    border-top: 1px solid #d9d9d9;
+    border-left: 0;
+    padding: 20px 0;
+    width: 100%
+  }
+
+  .feseclist:first-child {
+    border-top: 0
+  }
+
+  .feseclist .tltsum {
+    height: inherit;
+    width: 65%
+  }
+
+  .feseclist img {
+    width: 35%
+  }
+
+  .lftfevideo,.rhtfevideo {
+    border-right: 0;
+    padding-right: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 0
+  }
+
+  .rhtfevideo ul {
+    margin: 0 -10px
+  }
+
+  .rhtfevideo li {
+    padding: 0 10px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    width: 50%;
+    border-right: none;
+    font-size: 13px;
+    line-height: 16px
+  }
+
+  .lftcolbx .editbox {
+    width: 100%
+  }
+
+  .quote-post {
+    min-height: inherit;
+    margin-bottom: 20px
+  }
+
+  .felstbox {
+    border-top: 1px solid #d9d9d9;
+    padding: 20px 20px;
+    width: 100%
+  }
+
+  .felstbox:first-child {
+    border-top: 0
+  }
+
+  .felstbox .bdrbtm,.feseclist .bdrbtm {
+    border-bottom: 0;
+    padding-bottom: 0
+  }
+
+  .felstbox .fesumt {
+    height: inherit;
+    width: 65%
+  }
+
+  .felstbox img {
+    width: 35%
+  }
+
+  .editbox {
+    border-left: 0;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 20px;
+    width: 100%
+  }
+
+  .editbox:first-child {
+    border-top: 0;
+    margin-top: 0
+  }
+
+  .fenitem {
+    border-left: 0;
+    width: 100%
+  }
+
+  .fenitem:first-child {
+    border-top: 0
+  }
+
+  .fenitem figure {
+    padding-bottom: 0;
+    float: right;
+    width: 35%
+  }
+
+  .itemsumm {
+    float: left;
+    padding-right: 15px;
+    width: 65%
+  }
+
+  .mainarticle {
+    width: 100%
+  }
+
+  .leftstory {
+    padding-right: 0;
+    width: 100%
+  }
+
+  .ReadTitlebox {
+    padding-right: 20px;
+    width: 75%
+  }
+
+  .AlsoRead figure {
+    width: 25%
+  }
+
+  .leftcol {
+    padding-right: 0;
+    width: 100%
+  }
+
+  .rightcol {
+    margin-top: 30px;
+    width: 100%
+  }
+
+  .socialshare {
+    padding-right: 0;
+    width: 100%
+  }
+
+  .socialshare li {
+    float: left;
+    margin: 8px 15px 15px 0
+  }
+
+  .hgroup h1 {
+    font-size: 28px;
+    line-height: 36px
+  }
+
+  .pstsummary {
+    padding-right: 0;
+    width: 100%
+  }
+
+  .postimgbx {
+    margin-top: 15px;
+    width: 100%
+  }
+
+  .lstitemt {
+    border-top: 1px solid #d9d9d9;
+    float: left;
+    padding: 15px 10px;
+    width: 100%
+  }
+
+  .lstitemt:first-child {
+    border-top: 0;
+    padding-top: 0
+  }
+
+  .lstitemt figure {
+    float: right;
+    width: 35%
+  }
+
+  .listcontent {
+    float: left;
+    padding-top: 0;
+    padding-right: 15px;
+    width: 65%
+  }
+
+  .lstitems {
+    min-height: inherit;
+    padding-bottom: 5px
+  }
+
+  .content-list h4 {
+    display: none
+  }
+
+  .content-list {
+    padding-right: 15px;
+    width: 65%
+  }
+
+  .imgbox {
+    width: 35%
+  }
+
+  .content-list h3 {
+    font-size: 15px;
+    line-height: 20px
+  }
+
+  .fcltitle,.trnd-summ {
+    width: 65%
+  }
+
+  .focallist figure,.trendcomnbx figure {
+    width: 35%
+  }
+
+  .trend-full {
+    width: 100%
+  }
+
+  .photothumb-grid li {
+    margin-left: 6%;
+    width: 47%
+  }
+
+  .photothumb-grid li:nth-child(3n+1) {
+    margin-left: 6%
+  }
+
+  .photothumb-grid li:nth-child(2n+1) {
+    margin-left: 0
+  }
+
+  .footer-section,.footer-section-link {
+    width: 100%
+  }
+
+  .footer-section-link section {
+    margin-bottom: 20px;
+    width: 50%
+  }
+
+  .footlink li:first-child a {
+    padding-left: 7px
+  }
+
+  .copylink {
+    margin-bottom: 10px
+  }
+
+  .copylink a,.copyright {
+    line-height: 16px
+  }
+
+  .copylink a {
+    padding-right: 10px
+  }
+
+  .copylink a+a:before {
+    display: none
+  }
+
+  .copylink,.copyright {
+    text-align: left;
+    width: 100%
+  }
+
+  .copylink,.copyright {
+    text-align: left;
+    width: 100%
+  }
+
+  .brandsbx .brandbx select {
+    width: 100%
+  }
+
+
+  .share-widget {
+    opacity: 1;
+    display: none
+  }
+
+  .twosrch-col li {
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    min-height: auto
+  }
+
+
+
+
+
+  .gallery-category li {
+    min-height: auto
+  }
+
+  .article-list li {
+    width: 100%;
+    height: auto
+  }
+
+  .mailbg {
+    width: 100%
+  }
+
+  .contright {
+    width: 100%;
+    margin: 15px 0 0 0;
+    height: 80px!important
+  }
+
+  .linkrightblue {
+    float: none;
+    margin-top: 20px
+  }
+
+  .horroscope-icon {
+    width: 36%;
+    height: 125px;
+    margin-left: 4%
+  }
+
+  .hblock p {
+    width: 60%
+  }
+
+  .boxbg {
+    margin: 9px -10px;
+    border: 1px solid #dfdede
+  }
+
+  .boxbg ul {
+    width: 49%
+  }
+
+  .col-sm-12 .contright {
+    height: auto!important
+  }
+
+  strong.sarch-article {
+    font-size: 14px;
+    float: left;
+    display: block;
+    padding-top: 15px
+  }
+
+  .searchform #searchsubmit {
+    top: 30px
+  }
+
+  .searchform .fa-search {
+    right: 75px;
+    top: 46px
+  }
+
+  .author-box {
+    width: 50%
+  }
+
+  .author-box.author-box-inverse .author-image {
+    float: none;
+    margin: 0 auto
+  }
+
+  .author-box {
+    width: 100%;
+    margin: 12px 0
+  }
+
+  .author-lis-wrap {
+    margin: 0
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+    float: left
+  }
+
+  .h_photos {
+    margin-bottom: 0
+  }
+
+  .rhtfevideo li h3 {
+    font-size: 13px;
+    line-height: 16px
+  }
+
+  .pageadd {
+    text-align: center
+  }
+
+  .gallery-grid .topblock .aside .adbox-border-desk {
+    padding-top: 0
+  }
+
+  .fenitem {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 20px
+  }
+
+  .fenitem:last-child {
+    border-bottom: none
+  }
+
+  .mb60 {
+    margin-bottom: 30px
+  }
+
+  .pageadd {
+    margin-bottom: 20px
+  }
+
+  .page-numbers li a,.page-numbers li span,.pagination li a,.pagination li span {
+    padding: .3rem .55rem
+  }
+
+  .commonbox.h-industry .bdrbtm {
+    padding-bottom: 0
+  }
+
+  .ab-market-mobile-box {
+    float: right
+  }
+
+  .place-line {
+    display: block;
+    padding: 3px 0 0
+  }
+
+  .pipeline {
+    display: none
+  }
+
+  .bhlinks {
+    float: left;
+    display: block;
+    white-space: nowrap;
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+    margin-top: 12px
+  }
+
+  .bhlinks ul {
+    padding-bottom: 10px
+  }
+
+  .bhlinks ul li {
+    display: inline-block;
+    float: none
+  }
+
+  .bhlinks li:first-child a {
+    padding-left: 0
+  }
+
+  .commonbox.h-india.budget19 .h_group {
+    padding-bottom: 0
+  }
+
+  .authors-article .heading {
+    width: 100%
+  }
+
+  .embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0
+  }
+
+  .embed-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+}
+

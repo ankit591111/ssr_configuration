@@ -1,7 +1,10 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import { Router, Link } from "@reach/router";
+import React from "react";
+import { Route, Switch } from 'react-router-dom';
 import Details from "./detail";
+import Dummy from "./dummy";
+import {getUrl,fetchData} from "../../models/loadData";
+
+//import './app.css';
 
  class App extends React.Component{
      constructor(props){
@@ -9,21 +12,19 @@ import Details from "./detail";
          this.state={
              data:'adomf dfd'
          }
+         //console.log(this.staticContext)
      }
 
      componentDidMount(){
-         console.log('mount is here')
+         console.log('mount is here');
+
      }
      render() {
          return (
-             <div>
-                 <header>
-                     <Link to="/">{this.state.data}</Link>
-                 </header>
-                 <Router>
-                     <Details path="/"/>
-                 </Router>
-             </div>
+                 <Switch>
+                     <Route exact render={(props)=>{return <Details {...props}/>}} path="/"/>
+                     <Route render={(props)=><Dummy {...props}/>} path="/abc"/>
+                 </Switch>
          );
      }
 };

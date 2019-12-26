@@ -1,31 +1,31 @@
 import express from 'express';
 import React from 'react';
-const indexHtml = require('./app/index.html');
 import { renderToString } from 'react-dom/server';
-import { ServerLocation } from "@reach/router";
+import { StaticRouter,Route } from 'react-router-dom';
 import App from "./app/components/app";
-//import template from "./template";
-import fs from 'fs';
-const server =  express();
-server.use('/assets', express.static('assets'));
-const html = indexHtml.toString();
-const parts = html.split("Not Rendered");
-server.use((req,res)=>{
-    const reactMarkup = (
-        <ServerLocation url={req.url}>
-            <App />
-        </ServerLocation>
-    );
+import template from "./template";
+import {getUrl,fetchData} from "./models/loadData";
 
-    res.send(`${parts[0]}${renderToString(reactMarkup)}${parts[1]}`);
-    res.end();
-})
-// server.get('/',(req,res)=>{
-//     const appHtml = renderToString(<App/>)
-//     res.send(template({
-//         body:appHtml,
-//         title:"Financial Express Server Side"
-//     }));
-// });
+const server =  express();
+
+server.use('/assets', express.static('assets'));
+
+server.get('/*',async (req,res)=>{
+    const url = await getUrl('article',{id:1768253});
+   fetchData(url).then((response)=>{
+       const context = response['data'];
+       const appHtml = renderToString(
+           <StaticRouter location={req.url} context={context}>
+               <App />
+           </StaticRouter>
+       );
+       res.send(template({
+           body:appHtml,
+           preloadState:JSON.stringify(context),
+           title:"Financial Express Server Side"
+       }));
+   })
+
+ });
 server.listen(8081);
 console.log('listening at 8081');

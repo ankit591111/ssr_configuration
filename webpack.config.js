@@ -4,15 +4,17 @@
 3. BundleAnalyzerPlugin is used for creating html report of bundles produced by webpack
 4. mini-css-extract-plugin is used to extract small css according to the requirement of file
  */
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+//var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin'); //
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
+const mode_type = 'production'
 module.exports = [
     {
-        mode: "development",
+        mode: mode_type,
         entry: './src/server.js',
         output: {
             path: __dirname+'/dist',
@@ -24,7 +26,6 @@ module.exports = [
         target: 'node',
         externals: nodeExternals(),
         module: {
-
             rules: [
                 {
 
@@ -36,13 +37,18 @@ module.exports = [
                 {
                     test: /\.html$/,
                     loader: 'html-loader'
+                },
+                {
+                    test: /\.(sa|sc|c)ss$/, // this regex read all types of css and css pre-processor
+                    loader: ['ignore-loader'],
+
                 }
             ]
         }
     },
     {
         // In this module change the code for bundling of client
-        mode: "development",
+        mode: mode_type,
         entry: './src/app/browser.js',
         output: {
             path: __dirname+'/dist/assets',
@@ -54,49 +60,39 @@ module.exports = [
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output
                 // all options are optional
-                filename: 'index.css',
-                allChunks: true,
+                filename: '[name].css',
+                chunkFilename: '[id].css',
                 ignoreOrder: false, // Enable to remove warnings about conflicting order
             }),
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery",
-                "window.jQuery": "jquery"
-            }),
-
-            new HtmlWebpackPlugin({
-                title: 'My App',
-                template: './src/app/index.html'
-            })
+            // new webpack.ProvidePlugin({
+            //     $: "jquery",
+            //     jQuery: "jquery",
+            //     "window.jQuery": "jquery"
+            // }),
         ],
         optimization: {
             splitChunks: {
                 cacheGroups: {
                     commons: { // here we are creating seperate bundle for node modules
-                        test: /[\\/]node_modules[\\/]/,
+                        test: /[\\/]node_modules[\\/(?!express)\\/]/,
                         name: 'vendors',
                         chunks: 'all'
                     }
                 }
-            }
+            },
+            minimizer: [
+                new UglifyJsPlugin({
+                    test: /\.js(\?.*)?$/i
+                })
+            ]
         },
         module: {
             rules: [
                 {
-                    test: /\.(sa|sc|c)ss$/, // this regex read all types of css and css pre-processor
-                    use: [
-                        {
-                            loader: MiniCssExtractPlugin.loader,
-                            options: {
-                                // you can specify a publicPath here
-                                // by default it uses publicPath in webpackOptions.output
-                                publicPath: './',
-                            },
-                        },
-                        'css-loader',
-                        'sass-loader',
-                        'style-loader'
-                    ],
+                    test: /\.(sa|sc|c)ss$/i, // this regex read all types of css and css pre-processor
+                    use: [MiniCssExtractPlugin.loader, 'css-loader'],
+
+
                 },
                 {
                     test: /\.js$/,
@@ -110,7 +106,7 @@ module.exports = [
             ]
         },
         resolve: {
-            extensions: ['.js', '.jsx'],
+            extensions: ['.js', '.jsx','.css'],
         }
     },
 
